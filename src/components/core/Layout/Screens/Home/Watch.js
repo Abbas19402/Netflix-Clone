@@ -205,9 +205,9 @@ const Watch = ({route , navigation}) => {
           </View>
           <View style={{flex:1 ,flexDirection: 'row', marginVertical: 3 , justifyContent: 'flex-start' , alignItems: 'center' }}>
             <View style={{ width: '25%' , justifyContent: 'center' , alignItems: 'center' }}>
-              <Text>{State.release_date}</Text>
+              <Text style={{color: '#999'}}>{State.release_date}</Text>
             </View>
-            <Text>|</Text>
+            <Text style={{color: '#999'}}>|</Text>
             <View style={{ width: '15%' , marginHorizontal: 3 , justifyContent: 'center' , alignItems: 'center'}}>
               <Text style={{color: 'dodgerblue' , fontSize:18}}>HD</Text>
             </View>
@@ -215,7 +215,7 @@ const Watch = ({route , navigation}) => {
         </LinearGradient>
       </ImageBackground>}
       <View style={{padding: 16 , backgroundColor: '#111' , width: '100%'}}>
-        <Text style={{fontSize: 16}}>{State.overview}</Text>
+        <Text style={{fontSize: 16 , color: '#888'}}>{State.overview}</Text>
       </View>
       <View style={{height: 50 ,  justifyContent: 'flex-start' , flex: 1 , flexDirection: 'row' , paddingHorizontal: 10 , alignItems: 'center' , backgroundColor: '#111'}}>
         <TouchableHighlight style={{width: '60%'}} onPress={()=> {
@@ -265,7 +265,7 @@ const Watch = ({route , navigation}) => {
         </TouchableHighlight> : <TouchableHighlight onPress={()=> addToList(State)}>
           <View style={{ backgroundColor: 'transparent', height: 40, width: 80, paddingTop: 2.5, borderRadius: 2.5 }}>
             <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-              <Text style={{ textAlign: 'center', marginHorizontal: 3, fontSize: 15 }}>Add To List</Text>
+              <Text style={{ textAlign: 'center', marginHorizontal: 3, fontSize: 15, color: '#999' }}>Add To List</Text>
               <Icon name="add-outline" size={19} color="#fff" />
             </View>
           </View>
@@ -274,7 +274,7 @@ const Watch = ({route , navigation}) => {
         <TouchableHighlight>
           <View style={{height: 40, width: 100, paddingTop: 2.5, borderRadius: 2.5 }}>
             <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-              <Text style={{ textAlign: 'center', marginHorizontal: 5, fontSize: 15, color: 'White' }}>Rate</Text>
+              <Text style={{ textAlign: 'center', marginHorizontal: 5, fontSize: 15, color: '#999' }}>Rate</Text>
               <Icon name="thumbs-up-sharp" size={20} color="#fff" style={{marginHorizontal:4}}/>
               <Icon name="thumbs-down-sharp" size={20} color="#fff" style={{marginHorizontal:4}}/>
             </View>
@@ -284,7 +284,7 @@ const Watch = ({route , navigation}) => {
         <TouchableHighlight>
           <View style={{ backgroundColor: 'transparent', height: 40, width: 80, paddingTop: 2.5, borderRadius: 2.5 }}>
             <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-              <Text style={{ textAlign: 'center', marginHorizontal: 3, fontSize: 15 }}>Info</Text>
+              <Text style={{ textAlign: 'center', marginHorizontal: 3, fontSize: 15 ,color: '#999'}}>Info</Text>
               <Icon name="information-circle-outline" size={19} color="#fff" />
             </View>
           </View>

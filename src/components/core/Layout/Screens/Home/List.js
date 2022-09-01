@@ -60,7 +60,7 @@ const List = ({navigation}) => {
             <View style={{ padding: 15 , flex: 1 , flexDirection: 'row' , alignItems: 'center' ,justifyContent: 'space-between' , height: 70}}>
               <View style={{ flex: 1 , flexDirection: 'row' , alignItems: 'center' , justifyContent: 'flex-start'}}>
                 <Image source={{uri: `https://image.tmdb.org/t/p/original${item.poster_path}`}} style={{width: 50 , height: 50 , marginRight: 20, borderRadius: 7}}/>
-                {item.media_type == 'movie' ? <Text style={item.title.length > 40 ? { fontSize: 17 } : {fontSize: 18 } }>{item.title}</Text> : <Text style={item.original_name.length > 40 ? { fontSize: 17 } : {fontSize: 18 } }>{item.original_name}</Text>}
+                {item.media_type == 'movie' ? <Text style={item.title.length > 40 ? { fontSize: 17 , color: '#939393' } : {fontSize: 18 , color: '#939393' } }>{item.title}</Text> : <Text style={item.original_name.length > 40 ? { fontSize: 17 , color: '#939393' } : {fontSize: 18 , color: '#939393' } }>{item.original_name}</Text>}
               </View>
               { Platform.OS !== 'ios' ? <TouchableNativeFeedback onPress={()=> removeFromList(item)}>
                 <View style={{position: 'relative' , borderWidth: 3, height: 40 , width: 80, justifyContent: 'center', alignItems: 'center' , backgroundColor: "darkred", borderRadius: 8}}>

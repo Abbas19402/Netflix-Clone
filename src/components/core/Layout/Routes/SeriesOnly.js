@@ -39,12 +39,12 @@ const SeriesOnly = ({navigation}) => {
             <TouchableNativeFeedback onPress={()=> navigation.navigate('watch' , {State: item, Type: 'tv'})}>
               <View style={{ padding: 15 , flex: 1 , flexDirection: 'row' , alignItems: 'center' ,justifyContent: 'flex-start' , height: 70}}>
                 <Image source={{uri: `https://image.tmdb.org/t/p/original${item.poster_path}`}} style={{width: 50 , height: 50 , marginRight: 20, borderRadius: 7}}/>
-                <Text style={item.original_name.length > 40 ? { fontSize: 17 } : {fontSize: 18 } }>{item.original_name}</Text>
+                <Text style={item.original_name.length > 40 ? { fontSize: 17, color: '#939393' } : {fontSize: 18, color: '#939393' } }>{item.original_name}</Text>
               </View>
             </TouchableNativeFeedback> : <TouchableHighlight onPress={()=> navigation.navigate('watch' , {State: item})}>
               <View style={{ padding: 15 , flex: 1 , flexDirection: 'row' , alignItems: 'center' ,justifyContent: 'flex-start' , height: 70}}>
                 <Image source={{uri: `https://image.tmdb.org/t/p/original${item.poster_path}`}} style={{width: 50 , height: 50 , marginRight: 20, borderRadius: 7}}/>
-                <Text style={item.original_name.length > 40 ? { fontSize: 17 } : {fontSize: 18 } }>{item.original_name}</Text>
+                <Text style={item.original_name.length > 40 ? { fontSize: 17, color: '#939393' } : {fontSize: 18, color: '#939393' } }>{item.original_name}</Text>
               </View>
             </TouchableHighlight>
           )

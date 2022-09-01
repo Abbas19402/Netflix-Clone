@@ -9,6 +9,7 @@ import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
 import * as actionCreator  from '../../../../../Redux/Actions/Actions'
 import { bindActionCreators } from 'redux'
+import Lottie from 'lottie-react-native';
 
 const Header = ({ netflix, navigation }) => {
   useEffect(() => {
@@ -189,8 +190,6 @@ const HomePage = ({ navigation }) => {
                     marginHorizontal: 3
                     }}>
                     <ImageBackground source={{ uri: `https://image.tmdb.org/t/p/original${item.backdrop_path}` }} style={{ width: 300, height: '100%', borderRadius: 16 , borderBottomLeftRadius: 7 , borderBottomRightRadius: 7, justifyContent: 'flex-end' , alignItems: 'center'}} resizeMethod={'auto'}>
-                      {/* <Text style={{color: '#fff' , fontSize: 18, position: 'relative' , top: -2}}>{item.title}</Text>
-                      <Text style={{color: '#fff' , fontSize: 18, position: 'relative' , top: -2}}>{item.original_name}</Text> */}
                     </ImageBackground>
                   </View>
                 </TouchableHighlight>
@@ -216,7 +215,7 @@ const HomePage = ({ navigation }) => {
                     width: 130, 
                     marginHorizontal: 3
                     }}>
-                    <Image source={{ uri: `https://image.tmdb.org/t/p/original${item.poster_path}` }} style={{ width: 130, height: '100%', borderRadius: 7 , borderBottomLeftRadius: 7 , borderBottomRightRadius: 7 }} />
+                      <Image source={{ uri: `https://image.tmdb.org/t/p/original${item.poster_path}` }} style={{ width: 130, height: '100%', borderRadius: 7 , borderBottomLeftRadius: 7 , borderBottomRightRadius: 7 }} />
                   </View>
                 </TouchableHighlight>
               )}
