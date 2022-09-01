@@ -16,7 +16,7 @@ const SearchBar = () => {
   const [ searchItem , setSearchItem ] = useState();
 
   const searchShows = async(event) => {
-    await axios.get(`https://api.themoviedb.org/3/search/multi?api_key=d783b21f4df68f71fbb0a780874f6cfb&language=en-US&query=${event}&page=1&include_adult=true`)
+    await axios.get(`https://api.themoviedb.org/3/search/multi?api_key=d783b21f4df68f71fbb0a780874f6cfb&language=en-US&query=${event}&page=1&include_adult=false`)
     .then((res)=> {
       let sMovies = res.data.results.filter( item => item.media_type == 'movie' )
       let sTvSeries = res.data.results.filter( item => item.media_type == 'tv' )
